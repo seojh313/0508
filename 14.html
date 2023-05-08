@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //날짜 시ㅏㄴ 
+        var nowDate = new Date();
+
+        var year =nowDate.getFullYear();
+        var month = nowDate.getMonth()+1;
+        var date = nowDate.getDate();
+        var day = nowDate.getDay();
+        var hour = nowDate.getHours();
+        var minute = nowDate.getMinutes();
+        var second = nowDate.getSeconds();
+       
+        var dayStr = "";
+        if(day==0){
+            dayStr ="일요일";
+        } else if (day ==1){
+            dayStr = "월요일";
+        } 
+        
+        alert(" /" + year + " /" + month + " /" + date + " /" + hour + " /" + minute + " /" + second + " /" + dayStr);
+
+        if(hour<12){
+            alert("오전입니다.")
+        } else{
+            alert("오후입니다.")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

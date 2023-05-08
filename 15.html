@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var nowDate = new Date();
+        var hour = nowDate.getHours();
+        
+        var msg="";
+        if ( hour<5){
+            msg ="더 자야지";
+        } else if (hour < 8 ){
+            msg="등교준비중";
+        } else if (hour < 9 ){
+            msg="등교중";
+        } else if (hour < 12 ){
+            msg="공부중";
+        } else if (hour < 14 ){
+            msg="식사중";
+        } else if (hour < 16 ){
+            msg="오후공부중";
+        } else{
+            msg="하교"
+        }
+        alert(msg);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
